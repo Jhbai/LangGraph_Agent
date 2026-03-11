@@ -192,6 +192,7 @@ def agent_planner(state: DynamicState) -> PlanningResult:
             
             clean_json_str = re.sub(r'^```(?:json)?\n|\n```$', '', content.strip(), flags=re.MULTILINE)
             parsed_result = PlanningResult.model_validate_json(clean_json_str)
+            break
         except:
             prompt = "以下的json輸出格式不正確，請按照json的格式再重新輸出一次。這是之前的輸出內容:\n" + content
     
