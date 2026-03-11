@@ -145,7 +145,7 @@ def append_file(file_path: str, content: str) -> str:
 agent_tools = [execute_bash, read_file, write_file, append_file, send_message, check_messages, wait_for_reply, mark_job_finished]
 
 # 定義 LLM 模型
-NVIDIA_API_KEY = "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"
+NVIDIA_API_KEY = "XXXXXX"
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 MODEL_NAME = "qwen/qwen3.5-122b-a10b"
 model = ChatOpenAI(
