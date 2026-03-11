@@ -1,7 +1,10 @@
 # 套件安裝
 pip install langchain langchain-core langchain-community langchain-experimental
+
 pip install langgraph langgraph-checkpoint-sqlite
+
 pip install langchain-openai langchain-anthropic tavily-python
+
 pip install langsmith "langserve[all]"
 
 # 啟動追蹤
